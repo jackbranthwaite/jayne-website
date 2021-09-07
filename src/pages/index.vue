@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="title">Hello World</h1>
+    <p class="title">Hello World</p>
   </div>
 </template>
 <script lang="ts">
@@ -11,3 +11,10 @@ export default Vue.extend({
   components: {}
 })
 </script>
+
+<style lang="scss" scoped>
+@import '~assets/styles/config';
+.title {
+  font-family: $cormorant;
+}
+</style>

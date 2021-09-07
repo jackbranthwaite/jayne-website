@@ -32,18 +32,19 @@ $grey: #485570;
 $grey--light: #9599a2;
 $grey--transparent: rgba(0, 7, 18, 0.6);
 $white: #dfe4e6;
-$bright-white: #f6f7f9;
+$bright--white: #f6f7f9;
 $black: #0a0a0a;
 $white: #fff;
 
-$body-background-color: $bright-white;
+$body-background-color: $bright--white;
 $default-font-color: $dark--lava;
 $default-link-color: $dark--lava;
 $default-hover-color: $nickel;
 
 // 03. Type
 $avenir: avenir, helvetica, arial, sans-serif;
-$body-font-family: $avenir;
+$cormorant: cormorant;
+$body-font-family: $cormorant;
 $default-font-family: $body-font-family;
 $font-family: $body-font-family;
 $heading-font-family: $avenir;
