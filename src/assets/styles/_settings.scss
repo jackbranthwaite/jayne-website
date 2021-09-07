@@ -9,6 +9,21 @@ $xlarge-min: 1440px;
 $xxlarge-min: 1920px;
 
 // 02. Colours
+$bittersweet: #ff6f59;
+$sage: #b2b09b;
+$dark--lava: #544b3d;
+$little--blue: #80a1d4;
+$pine--green: #0b7a75;
+$light--green: #8aea92;
+$liberty--blue: #4357ad;
+$vermillion: #c73e1d;
+$orange--web: #f49f0a;
+$june--bud: #c8e86f;
+$brink--pink: #e85d75;
+$nickel: #74776b;
+$blue--purple: #c2aff0;
+$dark--blue--purple: #9191e9;
+
 $yellow: #ffd068;
 $red: #f56d4c;
 $blue: #8bd1d0;
@@ -22,9 +37,9 @@ $black: #0a0a0a;
 $white: #fff;
 
 $body-background-color: $bright-white;
-$default-font-color: $grey;
-$default-link-color: $grey;
-$default-hover-color: $grey--dark;
+$default-font-color: $dark--lava;
+$default-link-color: $dark--lava;
+$default-hover-color: $nickel;
 
 // 03. Type
 $avenir: avenir, helvetica, arial, sans-serif;
