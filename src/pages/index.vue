@@ -1,6 +1,7 @@
 <template>
   <div class="container">
-    <p class="title">Hello World</p>
+    <img src="../static/title-one.jpg" />
+    <img src="../static/title-two.jpg" />
   </div>
 </template>
 <script lang="ts">
