@@ -23,6 +23,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 @import '~assets/styles/config';
+
 .title {
   font-family: $cormorant;
 }
@@ -40,42 +41,27 @@ img {
   width: 40vw;
 }
 .writing {
-  margin-left: 6vw;
-  margin-top: 4vw;
+  color: $june--bud;
+  margin-right: 4vw;
+  margin-top: 10vw;
   position: absolute;
+  right: 0;
 }
 .photography {
+  color: $liberty--blue;
   margin-left: 3vw;
-  margin-top: 20vw;
+  margin-top: 2vw;
   position: absolute;
 }
-/* stylelint-disable */
+
 .title-image-container-one {
+  margin-top: -6vw;
   position: relative;
   transform: rotate(-5deg);
-  margin-top: -6vw;
-
-  &:hover {
-    .image-one {
-      opacity: 0.6;
-    }
-    .writing {
-      color: #000;
-    }
-  }
 }
 .title-image-container-two {
+  margin-top: -2vw;
   position: relative;
   transform: rotate(-2.5deg);
-  margin-top: -2vw;
-  &:hover {
-    .image-two {
-      opacity: 0.6;
-    }
-
-    .photography {
-      color: #000;
-    }
-  }
 }
 </style>

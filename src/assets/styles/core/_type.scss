@@ -8,12 +8,8 @@ body {
 }
 
 a {
-  color: $default-link-color;
+  color: $bittersweet;
   font-weight: 700;
-
-  &:hover {
-    color: $default-hover-color;
-  }
 }
 
 h1,
