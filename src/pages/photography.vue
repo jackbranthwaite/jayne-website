@@ -1,14 +1,16 @@
 <template>
   <div class="container">
     <h2 class="title">photography</h2>
+    <photo-container class="photo-container" />
   </div>
 </template>
 <script lang="ts">
 import Vue from 'vue'
+import PhotoContainer from '~/components/photo-container/PhotoContainer.vue'
 
 export default Vue.extend({
   name: 'Photography',
-  components: {}
+  components: { PhotoContainer }
 })
 </script>
 
@@ -16,5 +18,8 @@ export default Vue.extend({
 @import '~assets/styles/config';
 .title {
   font-family: $cormorant;
+}
+.container {
+  margin: 2vw;
 }
 </style>
