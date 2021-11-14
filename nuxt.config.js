@@ -11,9 +11,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   // Customize the progress-bar color: https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-loading
@@ -34,11 +32,18 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    '@nuxtjs/composition-api/module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
+  modules: ['@nuxtjs/prismic'],
+  prismic: {
+    endpoint: 'https://jayne-website.cdn.prismic.io/api/v2',
+
+    linkResolver: '@/plugins/link-resolver'
+
+    // htmlSerializer: '@/plugins/html-serializer'
+  },
 
   // Use src/ directory to keep consistent file structure across frameworks
   srcDir: 'src/',

@@ -1,18 +1,15 @@
 <template>
-  <div class="container">
-    <div class="test"></div>
-    <div class="test"></div>
-    <div class="test"></div>
-    <div class="test"></div>
-    <div class="test"></div>
-    <div class="test"></div>
+  <div class="photo-container">
+    <photography-folder />
   </div>
 </template>
 
 <script>
 import { defineComponent } from '@vue/composition-api'
+import PhotographyFolder from '../photography-folder/PhotographyFolder.vue'
 
 export default defineComponent({
+  components: { PhotographyFolder },
   setup() {}
 })
 </script>
