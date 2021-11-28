@@ -1,30 +1,31 @@
 <template>
-  <div class="photography-folder">
-    <button @click="consoleThis">Click Me</button>
+  <div v-if="folder" class="photography-folder">
+    <button @click="conThis(folder)">Click</button>
+    <nuxt-link :to="`photography/folder/${folder.id}`">
+      <img
+        :src="folder.data.header_image.url"
+        alt="folder main image"
+        class="main-image"
+      />
+      <p class="folder-title">{{ folder.data.title }}</p>
+    </nuxt-link>
   </div>
 </template>
 
 <script>
 import { defineComponent } from '@vue/composition-api'
-import { useContext, useAsync } from '@nuxtjs/composition-api'
 
 export default defineComponent({
-  setup() {
-    const { $prismic } = useContext()
-
-    const folders = useAsync(async () => {
-      return await $prismic.api.query(
-        $prismic.predicates.at('document.type', 'photography-folder')
-      )
-    })
-
-    return {
-      folders
+  props: {
+    folder: {
+      type: Object,
+      default: () => {}
     }
   },
+  setup() {},
   methods: {
-    consoleThis() {
-      console.log(this.folders)
+    conThis(folder) {
+      console.log(folder)
     }
   }
 })
@@ -33,9 +34,9 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import '~assets/styles/config';
 
-.photography-folder {
-  background-color: $bittersweet;
-  height: 200px;
-  width: 300px;
+.main-image {
+  height: auto;
+  min-width: 500px;
+  width: 5vw;
 }
 </style>
