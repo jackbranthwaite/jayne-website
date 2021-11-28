@@ -14,6 +14,7 @@
 }
 .link {
   text-decoration: none;
+  z-index: 10;
 }
 .header {
   @include type(24px, 32px);

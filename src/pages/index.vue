@@ -23,7 +23,11 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 @import '~assets/styles/config';
-
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+}
 .title {
   font-family: $cormorant;
 }
@@ -36,10 +40,11 @@ export default Vue.extend({
   font-family: $cormorant;
   font-size: 24px;
 }
+
 img {
   height: auto;
-  width: 40vw;
 }
+
 .writing {
   color: $june--bud;
   margin-right: 4vw;
@@ -55,13 +60,32 @@ img {
 }
 
 .title-image-container-one {
+  margin-right: 4vw;
   margin-top: -6vw;
   position: relative;
   transform: rotate(-5deg);
 }
 .title-image-container-two {
+  display: block;
   margin-top: -2vw;
   position: relative;
   transform: rotate(-2.5deg);
+}
+@media (max-width: $tablet-max) {
+  .image-container {
+    flex-direction: column;
+  }
+  .writing {
+    z-index: 10;
+  }
+  .photography {
+    z-index: 10;
+  }
+  .title-image-container-one {
+    margin-bottom: 50px;
+  }
+  .title-image-container-two {
+    margin-bottom: 50px;
+  }
 }
 </style>
